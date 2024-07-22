@@ -1,4 +1,4 @@
-name: git-action-buck # Name of the deployment
+name: git-0021 # Name of the deployment
 
 on:
   push: # Trigger the workflow when changes are pushed
@@ -19,4 +19,4 @@ jobs: # Any name can be provided
           aws-region: us-east-1
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync . s3://git-action-buck --delete # Change bucket name
+        run: aws s3 sync . s3://git-0021 --delete # Change bucket name
